@@ -60,7 +60,7 @@
                 color: #222;
                 padding: 0 25px;
                 font-size: 13px;
-                font-weight: 650;
+                font-weight: 700 !important;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -86,7 +86,7 @@
                 border-radius: 6px;
             }
             .footer {
-              background-color: rgba(142,74,73,0.5) !important;
+              background-color: rgba(142,74,73,0.8) !important;
             }
             .builder{
               color: #f5f5f5;
