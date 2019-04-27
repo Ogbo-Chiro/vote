@@ -30,7 +30,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" oninput="myFunction()">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" oninput="check()">
                                 <small id="error" style="color:#8E4A49"></small>
                                 <small id="accepted" style="color:#4CAA78"></small>
 
@@ -72,39 +72,36 @@
                                     {{ __('Register') }}
                                 </button>
 
-                                  <script>
-                                function myFunction() {
-                                    var email  = document.getElementById("email").value;
-                                    var btn = document.getElementById("button");
-                                    //check if it contains 17 or 18
-                                    var year1 = email.includes("17");
-                                    var year2 = email.includes("18");
+                                <script>
+                                    function check() {
+                                        var email  = document.getElementById("email").value;
+                                        var btn = document.getElementById("button");
+                                        //check if it contains 17 or 18
+                                        var year1 = email.includes("17");
+                                        var year2 = email.includes("18");
 
-                                    if(year1 == true || year2 == true){
-                                        var correctyear = true;
-                                    }
+                                        if(year1 == true || year2 == true){
+                                            var correctyear = true;
+                                        }
+                                        else{
+                                            var correctyear = false;
+                                        }
 
-                                    if(email.includes("@alastudents.org") == false){
-                                            document.getElementById("error").innerHTML = "Use your ALA email address";
-                                            document.getElementById("accepted").innerHTML = "";
-                                            btn.disabled = true;
+                                        if(email.includes("@alastudents.org") == true && correctyear == true){
+                                            document.getElementById("error").innerHTML = "";
+                                            document.getElementById("accepted").innerHTML = "Accepted";
+                                            btn.disabled = false;
 
                                         }
-                                    else if(email.includes("@alastudents.org") == true && correctyear = true){
-                                        document.getElementById("error").innerHTML = "";
-                                        document.getElementById("accepted").innerHTML = "Accepted";
-                                        btn.disabled = false;
+
+                                        else{
+                                            document.getElementById("error").innerHTML = "Use your correct ALA email address";
+                                                document.getElementById("accepted").innerHTML = "";
+                                            btn.disabled = true;
+                                        }
 
                                     }
-                                    else{
-                                        document.getElementById("error").innerHTML = "";
-                                        document.getElementById("accepted").innerHTML = "Accepted";
-                                        btn.disabled = true;
-
-                                    }
-
-                                }
-                            </script>
+                                </script>
                             </div>
                         </div>
                     </form>
