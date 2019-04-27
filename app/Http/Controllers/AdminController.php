@@ -132,7 +132,7 @@ class AdminController extends Controller
     }
 
     public function remove(Request $request){
-        //get number voted
+
         $user = $request->removing;
         $query = User::where('id', $user)->delete();
 
