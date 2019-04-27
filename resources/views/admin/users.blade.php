@@ -57,6 +57,7 @@
                   </td>
                   <td>
                   <form action="{{ route('remove') }}" method="POST">
+                    @csrf
                     <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id }}" readonly/>
                   </td>
                   <td>
