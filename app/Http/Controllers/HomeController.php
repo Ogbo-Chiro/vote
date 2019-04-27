@@ -163,7 +163,7 @@ class HomeController extends Controller
     }
 
         public function candidates(){
-            $candidates  = Candidate::where('position', '!=' , 'honorcouncil')->get();
+            $candidates  = Candidate::where('position', '!=' , 'Honor Council')->get();
 
             return view('candidates', [
             'runners' => $candidates,
