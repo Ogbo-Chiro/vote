@@ -49,23 +49,23 @@
 	</div>
 	<br>
 
-	<div class="row" style="font-size: 14px !important">
+	<div class="row">
 		<div class="col-4">
-		      <a href="{{ route('get_results') }}" style="background-color: #8E4A49" class="btn btn-primary">See Results</a>
+		      <a href="{{ route('get_results') }}" style="background-color: #8E4A49; border: none" class="btn btn-primary">See Results</a>
 		  </div>
 		<div class="col-4">
-			<a class="btn btn-primary" href="{{ route('view_users') }}" style="background-color: #8E4A49">View all users</a>
+			<a class="btn btn-primary" href="{{ route('view_users') }}" style="background-color: #8E4A49; border: none">View all users</a>
 		</div>
 		<div class="col-4">
 		@if(isset($status) && $status == 'closed')
 			<form action="{{ route('change') }}" method="POST">
 			@csrf
-					<div class="form-group">
+					<div class="form-group" style="font-size: 14px !important">
 					    <label class="post-label" for="">Open Elections</label>
 					    <input style="width: 100% !important" type ='text' class="form-control" name="open" id="" placeholder="Type 'Open' to open elections">
 					</div><br>
 					<div class="form-group">
-					    <input type="submit" style="background-color: #8E4A49"  class="btn btn-primary" value="Change status">
+					    <input type="submit" style="background-color: #8E4A49; border: none"  class="btn btn-primary" value="Change status">
 					</div>
 
 			</form>
