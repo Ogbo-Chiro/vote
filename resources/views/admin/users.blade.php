@@ -57,7 +57,7 @@
                   </td>
                   <td>
                   <form action="{{ route('remove') }}" method="POST">
-                    <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id" }} readonly/>
+                    <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id }}" readonly/>
                   </td>
                   <td>
                       <input class="btn btn-alert" type="submit" value="remove">
