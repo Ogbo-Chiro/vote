@@ -105,11 +105,6 @@
 				    <input type="text" class="form-control" id="lname" name = 'lname' placeholder="Last Name" required>
 			  	</div>
 
-			  	<div class="form-group">
-					<label for="exampleFormControlFile1">Candidate Headshot</label>
-					<input type="file" class="form-control-file" name="pic" id="exampleFormControlFile1" required>
-				</div>
-
 				<div class="select">
 	                <select name="position" id="type" required>
 	                    <option value="Chairman">Chairman</option>

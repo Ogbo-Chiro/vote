@@ -85,8 +85,13 @@
                 text-transform: uppercase;
                 border-radius: 6px;
             }
+            .vote:hover{
+              background-color: #000 !important;
+
+            }
             .footer {
-              background-color: rgba(142,74,73,0.9) !important;
+              background-color: rgb(142,74,73) !important;
+              font-size: 15px;
             }
             .builder{
               color: #f5f5f5;

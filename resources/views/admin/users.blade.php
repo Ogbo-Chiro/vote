@@ -30,6 +30,8 @@
               <th>Serial</th>
                 <th>Name</th>
                 <th>Voted</th>
+                <th>id</th>
+                <th>Remove</th>
             </tr>
         </thead>
             @if(isset($users))
@@ -53,7 +55,14 @@
                       ?>
                   {{ $status }}
                   </td>
-
+                  <td>
+                  <form action="{{ route('remove') }}" method="POST">
+                    <input type="text" name="removing" value="$user->id" readonly/>;
+                  </td>
+                  <td>
+                      <input class="btn btn-alert" type="submit" value="remove">
+                    </form>
+                  </td>
               </tr>
 
             @endforeach

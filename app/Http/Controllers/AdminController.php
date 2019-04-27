@@ -67,15 +67,12 @@ class AdminController extends Controller
       public function add(Request $request)
     {
         $candidate = new Candidate;
-
-        $path = Storage::putFile('public', $request->file('pic'));
-        $url = Storage::url($path);
-
+        
         $candidate->first_name = $request->fname;
         $candidate->last_name = $request->lname;
         $candidate->position = $request->position;
         $candidate->votes = 0;
-        $candidate->photo = $url;
+        $candidate->photo = '';
 
         $candidate->save();
 
@@ -132,5 +129,13 @@ class AdminController extends Controller
         return view('admin.users', [
             'users' => $users,
         ]);    
+    }
+
+    public function remove(Request, $request){
+        //get number voted
+        $user = $request->removing;
+        $query = User::where('id', $user)->delete();
+
+        return back();
     }
 }
