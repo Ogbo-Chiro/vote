@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #f5f5f5;
+                background-color: #000;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -57,7 +57,7 @@
             }
 
             .links > a {
-                color: #333;
+                color: #f5f5f5;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 700 !important;
@@ -73,7 +73,7 @@
                 height: 150px;
             }
             .vote{
-                background-color: #111 !important;
+                background-color: #222 !important;
                 border: none;
                 width: 200px;
                 color: #fff !important;;
@@ -90,14 +90,14 @@
 
             }
             .footer {
-              background-color: rgba(0,0,0,0.8) !important;
+              background-color: rgba(0,0,0) !important;
               font-size: 15px;
             }
             .builder{
               color: #f5f5f5;
             }
           .builder:hover{
-            color: #8E4A49;
+            color: #A88A8A;
             text-decoration: none;
           }
         </style>
