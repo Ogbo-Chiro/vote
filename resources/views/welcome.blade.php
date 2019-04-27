@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #FFEBEA;
+                background-color: #FFFAF9;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -86,7 +86,7 @@
                 border-radius: 6px;
             }
             .footer {
-              background-color: rgba(0,0,0,0.8) !important;
+              background-color: rgba(0,0,0,0.3) !important;
             }
             .builder{
               color: #f5f5f5;
