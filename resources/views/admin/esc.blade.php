@@ -15,7 +15,7 @@
 				    <h5 class="card-title">Current No. of students</h5>
 				    <h6 class="card-subtitle mb-2 text-muted">Signed up</h6>
 				    @if(isset($students))
-				    <p class="card-text">{{ $student }}</p>
+				    <p class="card-text">{{ $students }}</p>
 				    @endif
 				</div>
 			</div>
