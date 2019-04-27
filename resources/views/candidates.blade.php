@@ -36,6 +36,7 @@
     </div>
     <div class="row">
       <div class="col-6">
+        <br><br>
       <a class="btn btn-primary submit" href="{{ route('home') }}">Home</a>
       </div>
     </div>
