@@ -51,10 +51,10 @@
 
 	<div class="row">
 		<div class="col-4">
-		      <a href="{{ route('get_results') }}" class="btn btn-primary submit">See Results</a>
+		      <a href="{{ route('get_results') }}" class="btn btn-primary">See Results</a>
 		  </div>
 		<div class="col-4">
-			<a class="btn btn-primary submit" href="{{ route('view_users') }}">View all users</a>
+			<a class="btn btn-primary" href="{{ route('view_users') }}">View all users</a>
 		</div>
 		<div class="col-4">
 		@if(isset($status) && $status == 'closed')

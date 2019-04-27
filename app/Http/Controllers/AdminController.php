@@ -44,9 +44,6 @@ class AdminController extends Controller
           //get candidates
           $candidates  = Candidate::get();
 
-          //get number left
-          //no. of users - admin
-
           //get status of elections
           $admin_id = Auth::id();
           $admin = User::where('id', $admin_id)->get();
