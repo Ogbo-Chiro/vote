@@ -27,8 +27,8 @@
           <img style="height: 120px;" class="img-responsive" src="{{ asset('img/tribune.png') }}" alt="">
         </center>
           <div class="card-body">
-            <h6 class="card-subtitle mb-2 text-muted">{{ $run->first_name . ' ' . $run->last_name }}</h6> 
-             <h5 class="card-title position-result" style="color: #8E4A49">{{ $run->position }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted" style="font-size: 13px !important;">{{ $run->first_name . ' ' . $run->last_name }}</h6> 
+             <h5 class="card-title position-result" style="color: #8E4A49; font-size: 14px !important">{{ $run->position }}</h5>
           </div>
         </div>
             @endforeach
