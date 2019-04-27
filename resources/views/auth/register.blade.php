@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+    <div class="image">
+        <img class="img-responsive" src="{{ asset('ala.png') }}">
+    </div>
+    <br>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -75,8 +79,10 @@
                                 function myFunction() {
                                     var email  = document.getElementById("email").value;
                                     var btn = document.getElementById("button");
+
                                     if(email.includes("@alastudents.org") == false){
                                             document.getElementById("error").innerHTML = "Use your ALA email address";
+                                            document.getElementById("accepted").innerHTML = "";
                                         btn.disabled = true;
 
                                         }

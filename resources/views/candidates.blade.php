@@ -15,8 +15,7 @@
     </div>
  <br>
     <div class='welcome'>Candidates</div>
-
-
+    <br>
     <div class="row">
 
 
@@ -74,7 +73,7 @@
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="https://chiro-website.herokuapp.com/index.html">Chiro Awoke Ogbo</a>.
+         <a target="blank" href="https://chiro-website.herokuapp.com/index.html">Chiro Awoke Ogbo</a>.
             </p>
           </div>
 
