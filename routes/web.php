@@ -35,6 +35,6 @@ Route::post('/esc', 'AdminController@change')->name('change')->middleware('admin
 
 Route::post('admin/esc', 'AdminController@release')->name('results')->middleware('admin');
 
-Route::post('/users', 'AdminController@remove')->name('remove')->middleware('admin');
+Route::post('users', 'AdminController@remove')->name('remove')->middleware('admin');
 
 Route::post('/home', 'HomeController@vote')->name('vote');

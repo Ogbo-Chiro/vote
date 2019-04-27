@@ -56,12 +56,13 @@
                   {{ $status }}
                   </td>
                   <td>
-                  <form action="{{ route('remove') }}" method="POST">
-                    @csrf
-                    <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id }}" readonly/>
+                  {{ $user->id }}
                   </td>
                   <td>
-                      <input class="btn btn-alert" type="submit" value="remove">
+                    <form action="{{ route('remove') }}" method="POST">
+                    @csrf
+                    <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id }}" readonly/>
+                      <input type="submit" value="remove">
                     </form>
                   </td>
               </tr>
