@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #000;
+                background-color: #0A0002;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -73,7 +73,7 @@
                 height: 150px;
             }
             .vote{
-                background-color: #222 !important;
+                background-color: #333 !important;
                 border: none;
                 width: 200px;
                 color: #fff !important;;
