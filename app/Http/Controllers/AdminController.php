@@ -53,11 +53,11 @@ class AdminController extends Controller
           $status = $admin[0]->status;
 
 
-
           $users = User::count() - 1;
           $left = $users - $count;
 
         return view('admin.esc', [
+            'students' => $users,
             'count' => $count,
             'runners' => $candidates,
             'left' => $left,

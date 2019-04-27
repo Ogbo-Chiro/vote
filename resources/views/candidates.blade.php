@@ -34,7 +34,11 @@
             @endforeach
 
     </div>
-
+<div class="row">
+      <div class="col-6">
+      <a class="btn btn-primary submit" href="{{ route('esc') }}">back to Office</a>
+      </div>
+    </div>
 
 
 </div>

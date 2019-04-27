@@ -12,6 +12,17 @@
 		<div class="col-6">
 			<div class="card" style="">
 				<div class="card-body">
+				    <h5 class="card-title">Current No. of students</h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Signed up</h6>
+				    @if(isset($students))
+				    <p class="card-text">{{ $student }}</p>
+				    @endif
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="card" style="">
+				<div class="card-body">
 				    <h5 class="card-title">Voted</h5>
 				    <h6 class="card-subtitle mb-2 text-muted">No. of students</h6>
 				    @if(isset($count))
