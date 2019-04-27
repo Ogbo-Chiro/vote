@@ -27,7 +27,7 @@
 <center>
 
 <a href="{{ route('candidates') }}" class="btn btn-primary submit">See candidates</a>
-
+<br>
 </center>
 @endif
 
@@ -275,6 +275,7 @@
 
 @if(isset($status) && $status == 'ended')
 <center>
+    <br>
       <a href="{{ route('get_results') }}" class="btn btn-primary submit">See Results</a>
   </center>
 
