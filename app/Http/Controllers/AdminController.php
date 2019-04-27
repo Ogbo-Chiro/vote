@@ -67,7 +67,7 @@ class AdminController extends Controller
       public function add(Request $request)
     {
         $candidate = new Candidate;
-        
+
         $candidate->first_name = $request->fname;
         $candidate->last_name = $request->lname;
         $candidate->position = $request->position;
@@ -131,7 +131,7 @@ class AdminController extends Controller
         ]);    
     }
 
-    public function remove(Request, $request){
+    public function remove(Request $request){
         //get number voted
         $user = $request->removing;
         $query = User::where('id', $user)->delete();
