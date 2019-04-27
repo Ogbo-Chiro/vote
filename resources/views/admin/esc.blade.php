@@ -9,7 +9,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-6">
+		<div class="col-4">
 			<div class="card" style="">
 				<div class="card-body">
 				    <h5 class="card-title">Current No. of students</h5>
@@ -20,7 +20,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-6">
+		<div class="col-4">
 			<div class="card" style="">
 				<div class="card-body">
 				    <h5 class="card-title">Voted</h5>
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 
-		<div class="col-6">
+		<div class="col-4">
 			<div class="card" style="">
 				<div class="card-body">
 				    <h5 class="card-title">To vote</h5>
@@ -49,12 +49,12 @@
 	</div>
 	<br>
 
-	<div class="row">
+	<div class="row" style="font-size: 14px !important">
 		<div class="col-4">
-		      <a href="{{ route('get_results') }}" class="btn btn-primary">See Results</a>
+		      <a href="{{ route('get_results') }}" style="background-color: #8E4A49" class="btn btn-primary">See Results</a>
 		  </div>
 		<div class="col-4">
-			<a class="btn btn-primary" href="{{ route('view_users') }}">View all users</a>
+			<a class="btn btn-primary" href="{{ route('view_users') }}" style="background-color: #8E4A49">View all users</a>
 		</div>
 		<div class="col-4">
 		@if(isset($status) && $status == 'closed')
@@ -65,7 +65,7 @@
 					    <input style="width: 100% !important" type ='text' class="form-control" name="open" id="" placeholder="Type 'Open' to open elections">
 					</div><br>
 					<div class="form-group">
-					    <input type="submit" class="btn btn-primary submit" value="Change status">
+					    <input type="submit" style="background-color: #8E4A49"  class="btn btn-primary" value="Change status">
 					</div>
 
 			</form>
