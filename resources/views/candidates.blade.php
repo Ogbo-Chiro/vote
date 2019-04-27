@@ -39,31 +39,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br><br><br><br><br>
   <!-- Site footer -->
     <footer class="site-footer">
@@ -106,7 +81,7 @@
               <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
               <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
               <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    -->
-              <p style="color:#8E4A49">esc@africanleadershipacademy.com</p>
+              <p style="color:#8E4A49">esc@alastudents.org</p>
             </ul>
           </div>
         </div>

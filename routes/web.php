@@ -19,9 +19,10 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('results/', 'HomeController@get_results')->name('get_results')->middleware('verified');
+Route::get('results/', 'HomeController@get_results')->name('get_results');
 
-Route::get('/candidates', 'HomeController@candidates')->name('candidates')->middleware('verified');
+Route::get('/candidates', 'HomeController@candidates')->name('candidates');
+
 Route::get('admin', 'AdminController@admin')->name('admin')->middleware('admin');
 
 Route::get('admin/esc', 'AdminController@esc')->name('esc')->middleware('admin');
@@ -34,4 +35,4 @@ Route::post('/esc', 'AdminController@change')->name('change')->middleware('admin
 
 Route::post('admin/esc', 'AdminController@release')->name('results')->middleware('admin');
 
-Route::post('/home', 'HomeController@vote')->name('vote')->middleware('verified');
+Route::post('/home', 'HomeController@vote')->name('vote');

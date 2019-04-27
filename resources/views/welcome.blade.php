@@ -109,7 +109,7 @@
 
                 <div class="links">
                     <a class="vote" href="{{ route('home') }}">Vote now!</a>
-                    <p>Use your user-specific password sent by the ESC to your email...</p>
+                    <p>Built for your comfort. Sience + art</p>
                 </div>
             </div>
         </div>
