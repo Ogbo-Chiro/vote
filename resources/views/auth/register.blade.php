@@ -2,9 +2,6 @@
 
 @section('content')
 <div class="container">
-    <div class="image">
-        <img class="img-responsive" src="{{ asset('ala.png') }}">
-    </div>
     <br>
     <div class="row justify-content-center">
         <div class="col-md-8">
