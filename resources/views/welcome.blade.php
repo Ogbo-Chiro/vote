@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        
+
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/custom.css') }}">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -57,7 +57,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #111;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -86,7 +86,7 @@
                 border-radius: 6px;
             }
             .footer {
-              background-color: #f5f5f5;
+              background-color: #000 !important;
             }
         </style>
     </head>
@@ -116,18 +116,20 @@
                 </div>
 
                 <div class="links">
-                    <a class="vote" href="{{ route('home') }}">Vote now!</a>
-                    <p>Built for ease.</p>
-                    <small>Science + art</small>
+                    <a class="vote" href="{{ route('home') }}">Vote now!</a><br><br>
+                    <p style="color:#fff">Built for ease.</p>
+                    <small style="color:#fff">Science + art</small>
                 </div>
             </div>
         </div>
 
         <footer class="footer mt-auto py-3">
           <div class="container">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <center>
+            <p style="font-size: 16px; color:#fff" class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
               <a target="blank" href="https://chiro-website.herokuapp.com/index.html">Chiro Awoke Ogbo</a>.
             </p>
+          </center>
           </div>
         </footer>
 
