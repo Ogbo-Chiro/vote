@@ -24,7 +24,7 @@
 
         <div class="card col-4">
           <center>
-          <img class="card-img-top" style="height:100px" class="img-responsive" src="{{ asset('img/Chairman.png') }}" alt="">
+          <img class="card-img-top" class="img-responsive" src="{{ asset('img/tribune.png') }}" alt="">
         </center>
           <div class="card-body">
             <h5 class="card-title position-result" style="color: #8E4A49">{{ $run->position }}</h5>
