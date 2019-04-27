@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #FFFAF9;
+                background-color: #f5f5f5;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -57,7 +57,7 @@
             }
 
             .links > a {
-                color: #222;
+                color: #333;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 700 !important;
@@ -73,7 +73,7 @@
                 height: 150px;
             }
             .vote{
-                background-color: #000 !important;
+                background-color: #111 !important;
                 border: none;
                 width: 200px;
                 color: #fff !important;;
