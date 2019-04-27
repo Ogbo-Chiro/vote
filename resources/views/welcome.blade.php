@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #0A0002;
+                background-image: linear-gradient(to right, #ffecd2 0%, #0A0002 100%);
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -90,7 +90,7 @@
 
             }
             .footer {
-              background-color: rgba(0,0,0) !important;
+              background-color: rgba(10,0,2) !important;
               font-size: 15px;
             }
             .builder{
