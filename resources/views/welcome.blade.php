@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+                background-color: #FFEBEA;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -57,10 +57,10 @@
             }
 
             .links > a {
-                color: #111;
+                color: #222;
                 padding: 0 25px;
                 font-size: 13px;
-                font-weight: 600;
+                font-weight: 650;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
