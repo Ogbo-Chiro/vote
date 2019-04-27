@@ -73,7 +73,7 @@
                 height: 150px;
             }
             .vote{
-                background-color: #8E4A49 !important;
+                background-color: #000 !important;
                 border: none;
                 width: 200px;
                 color: #fff !important;;
@@ -86,11 +86,11 @@
                 border-radius: 6px;
             }
             .vote:hover{
-              background-color: #000 !important;
+              background-color: #8E4A49 !important;
 
             }
             .footer {
-              background-color: rgb(142,74,73) !important;
+              background-color: rgba(0,0,0,0.8) !important;
               font-size: 15px;
             }
             .builder{
