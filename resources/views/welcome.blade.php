@@ -86,7 +86,7 @@
                 border-radius: 6px;
             }
             .footer {
-              background-color: rgba(0,0,0,0.3) !important;
+              background-color: rgba(142,74,73,0.5) !important;
             }
             .builder{
               color: #f5f5f5;
