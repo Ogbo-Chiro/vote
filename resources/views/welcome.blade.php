@@ -19,7 +19,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+                background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -86,7 +86,7 @@
                 border-radius: 6px;
             }
             .footer {
-              background-color: #000 !important;
+              background-color: rgba(0,0,0,0.8) !important;
             }
         </style>
     </head>
@@ -126,7 +126,7 @@
         <footer class="footer mt-auto py-3">
           <div class="container">
             <center>
-            <p style="font-size: 16px; color:#fff" class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p style="font-size: 15px !important; color:#fff" class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
               <a target="blank" href="https://chiro-website.herokuapp.com/index.html">Chiro Awoke Ogbo</a>.
             </p>
           </center>
