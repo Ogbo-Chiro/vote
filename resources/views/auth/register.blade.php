@@ -76,17 +76,30 @@
                                 function myFunction() {
                                     var email  = document.getElementById("email").value;
                                     var btn = document.getElementById("button");
+                                    //check if it contains 17 or 18
+                                    var year1 = email.includes("17");
+                                    var year2 = email.includes("18");
+
+                                    if(year1 == true || year2 == true){
+                                        var correctyear = true;
+                                    }
 
                                     if(email.includes("@alastudents.org") == false){
                                             document.getElementById("error").innerHTML = "Use your ALA email address";
                                             document.getElementById("accepted").innerHTML = "";
-                                        btn.disabled = true;
+                                            btn.disabled = true;
 
                                         }
-                                    else if(email.includes("@alastudents.org") == true){
+                                    else if(email.includes("@alastudents.org") == true && correctyear = true){
                                         document.getElementById("error").innerHTML = "";
                                         document.getElementById("accepted").innerHTML = "Accepted";
                                         btn.disabled = false;
+
+                                    }
+                                    else{
+                                        document.getElementById("error").innerHTML = "";
+                                        document.getElementById("accepted").innerHTML = "Accepted";
+                                        btn.disabled = true;
 
                                     }
 

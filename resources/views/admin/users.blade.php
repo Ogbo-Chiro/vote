@@ -22,16 +22,13 @@
     <br>
 
   <div class="row">
-
-
     <table class="table table-striped table-warning">
         <thead>
             <tr>
               <th>Serial</th>
                 <th>Name</th>
                 <th>Voted</th>
-                <th>id</th>
-                <th>Remove</th>
+                <th>Unique id</th>
             </tr>
         </thead>
             @if(isset($users))
@@ -56,13 +53,10 @@
                   {{ $status }}
                   </td>
                   <td>
-                  {{ $user->id }}
-                  </td>
-                  <td>
                     <form action="{{ route('remove') }}" method="POST">
                     @csrf
                     <input style="border: none; background:transparent !important;" type="text" name="removing" value="{{ $user->id }}" readonly/>
-                      <input type="submit" value="remove">
+                      <input class="btn btn-primary submit" type="submit" value="remove">
                     </form>
                   </td>
               </tr>
