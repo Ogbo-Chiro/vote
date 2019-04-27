@@ -21,10 +21,9 @@
 
 
             @foreach($runners as $run)
-              <?php $img = $run->position; ?>
 
         <div class="card col-4">
-          <img class="card-img-top" style="" src="{{ asset('img/chairman.png') }}" alt="Card image cap">
+          <img class="card-img-top" style="" src="{{ asset('img/Chairman.png') }}" alt="">
           <div class="card-body">
             <h5 class="card-title position-result" style="color: #8E4A49">{{ $run->position }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ $run->first_name . ' ' . $run->last_name }}</h6> 
