@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Candidate;
 use Illuminate\Support\Facades\Hash;
 use App\User;
+use App\Candidate;
 use Auth;
 
 class HomeController extends Controller
@@ -129,6 +130,8 @@ class HomeController extends Controller
         if($honorcouncil != 'none'){
             $query = Candidate::where('id', $honorcouncil)->increment('votes');
         }
+
+        $add_obj = Vote::where
 
         $query = User::where('id', $user_id)->update(['isVoted'=> 1]);
 
