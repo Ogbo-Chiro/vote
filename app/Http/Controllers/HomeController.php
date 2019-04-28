@@ -138,7 +138,7 @@ class HomeController extends Controller
     public function get_results(){
         $query = User::where('isAdmin', 1)->get();
         $available = $query[0]->status;
-        $candidates  = Candidate::orderBy('id', 'DESC')->where('position', '!=' , 'Honor Council')->get();
+        $candidates  = Candidate::orderBy('position', 'DESC')->where('position', '!=' , 'Honor Council')->get();
 
         if($available == 'ended'){   
 
@@ -163,7 +163,7 @@ class HomeController extends Controller
     }
 
         public function candidates(){
-            $candidates  = Candidate::orderBy('id', 'DESC')->get();
+            $candidates  = Candidate::orderBy('position', 'DESC')->get();
 
             return view('candidates', [
             'runners' => $candidates,
