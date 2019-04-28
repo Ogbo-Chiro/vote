@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Candidate;
 use Illuminate\Support\Facades\Hash;
 use App\User;
-use App\Candidate;
 use App\Voted;
 use Auth;
 
@@ -150,7 +149,7 @@ class HomeController extends Controller
 
         $email = $find->email;
         $vote->email = $email;
-        
+
         $vote->save();
         $query = User::where('id', $user_id)->update(['isVoted'=> 1]);
 
