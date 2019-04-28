@@ -144,10 +144,9 @@ class HomeController extends Controller
             $query = Candidate::where('id', $honorcouncil)->increment('votes');
         }
 
-        $find = new User;
-        $find = User::where('id', $user_id)->get();
 
-        $email = $find->email;
+        $email = Auth::user()->email;
+
         $vote->email = $email;
 
         $vote->save();
