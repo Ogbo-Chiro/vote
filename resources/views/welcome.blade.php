@@ -136,8 +136,7 @@
         <footer class="footer mt-auto py-3">
           <div class="container">
             <center>
-            <p style="font-size: 15px !important; color:#fff" class="copyright-text">Copyright &copy; 2019 All Rights Reserved by 
-              <a class="builder" target="blank" href="https://chiro-website.herokuapp.com/index.html">Chiro Awoke Ogbo</a>.
+            <p style="font-size: 15px !important; color:#fff" class="copyright-text">Copyright &copy; 2019 All Rights Reserved
             </p>
           </center>
           </div>
