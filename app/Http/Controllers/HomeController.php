@@ -7,6 +7,7 @@ use App\Candidate;
 use Illuminate\Support\Facades\Hash;
 use App\User;
 use App\Candidate;
+use App\Voted;
 use Auth;
 
 class HomeController extends Controller
@@ -85,54 +86,72 @@ class HomeController extends Controller
     {
         $user_id = Auth::id();
         //get all users answers and add to their votes
+        $vote = new Voted;
+
         $chairman = $request->chairman;
+        $vote->Chairman = $chairman;
         if($chairman != 'none'){
             $query = Candidate::where('id', $chairman)->increment('votes');
         }
 
         $chairlady = $request->chairlady;
+        $vote->Chairlady = $chairlady;
         if($chairlady != 'none'){
             $query = Candidate::where('id', $chairlady)->increment('votes');
         }
         $itrep = $request->itrep;
+        $vote->ITRep = $itrep;
         if($itrep != 'none'){
             $query = Candidate::where('id', $itrep)->increment('votes');
         }
         $clubsrep = $request->clubsrep;
+        $vote->ClubsRep = $clubsrep;    
         if($clubsrep != 'none'){
             $query = Candidate::where('id', $clubsrep)->increment('votes');
         }
         $acadsrep = $request->acadsrep;
+        $vote->AcademicRep = $acadsrep;
         if($acadsrep != 'none'){
             $query = Candidate::where('id', $acadsrep)->increment('votes');
         }
         $entrep = $request->entrep;
+        $vote->EntertainmentRep = $entrep;
         if($entrep != 'none'){
             $query = Candidate::where('id', $entrep)->increment('votes');
         }
         $secretary = $request->secretary;
+        $vote->Secretary = $secretary;
         if($secretary != 'none'){
             $query = Candidate::where('id', $secretary)->increment('votes');
         }
         $sportsrep = $request->sportsrep;
+        $vote->SportsRep = $sportsrep;
         if($sportsrep != 'none'){
             $query = Candidate::where('id', $sportsrep)->increment('votes');
         }
         $treasurer = $request->treasurer;
+        $vote->Treasurer = $treasurer;  
         if($treasurer != 'none'){
             $query = Candidate::where('id', $treasurer)->increment('votes');
         }
         $wellnessrep = $request->wellnessrep;
+        $vote->WellnessRep = $wellnessrep;
         if($wellnessrep != 'none'){
             $query = Candidate::where('id', $wellnessrep)->increment('votes');
         }
         $honorcouncil = $request->honorcouncil;
+        $vote->HonorCouncil = $honorcouncil;
         if($honorcouncil != 'none'){
             $query = Candidate::where('id', $honorcouncil)->increment('votes');
         }
 
-        $add_obj = Vote::where
+        $find = new User;
+        $find = User::where('id', $user_id)->get();
 
+        $email = $find->email;
+        $vote->email = $email;
+        
+        $vote->save();
         $query = User::where('id', $user_id)->update(['isVoted'=> 1]);
 
         return back();
