@@ -129,7 +129,6 @@
                 <div class="links">
                     <a class="vote" href="{{ route('home') }}">Vote now!</a><br><br>
                     <p style="color:#fff">Built for ease.</p>
-                    <small style="color:#fff">Science + art</small>
                 </div>
             </div>
         </div>

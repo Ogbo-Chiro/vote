@@ -146,7 +146,6 @@ class HomeController extends Controller
 
 
         $email = Auth::user()->email;
-
         $vote->email = $email;
 
         $vote->save();
